@@ -35,7 +35,7 @@
                     <a class="nav__link" href="#">about me</a>
                     <a class="nav__link" href="#">blog</a>
                     <a class="nav__link" href="#">contact</a>
-                    <a class="nav__link nav__link--btn" href="#">hire me</a>
+                    <a class="nav__link nav__link--btn" href="#" data-modal="#modal_hire_me">hire me</a>
                 </nav>
             </div>
         </div>
@@ -64,8 +64,8 @@
                         <!--TELEGRAM-->
                         <a href="#" class="social__link" target="_blank"><i class="fab fa-telegram" style="color: #2fa0d1"></i></a>
                     </div>
-                    <a class="btn" href="#">HIRE ME</a>
-                    <a class="btn" href="#">SEE MY RESUME</a>
+                    <a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
+                    <a class="btn" href="#" data-modal="#modal_resume">SEE MY RESUME</a>
                 </div>
                 <img class="intro__photo" src="images/intro/photo.png" alt="">
             </div>
@@ -84,7 +84,7 @@
             </div>
             <div class="portfolio">
                 <div class="portfolio__col" data-cat="website">
-                    <div class="portfolio__item">
+                    <div class="portfolio__item" data-modal="#modal_project_1">
                         <iframe src="https://pruffit.github.io/mogo" width="370px" height="300px" frameborder="0"></iframe>
                         <div class="portfolio__item-content">
                             <div class="portfolio__item-cat">
@@ -154,8 +154,8 @@
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo tempora soluta, a nostrum minima labore voluptates veniam quaerat quam aperiam quibusdam, officiis esse officia nisi repudiandae, ullam adipisci dolor ad?</p>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo tempora soluta, a nostrum minima labore voluptates veniam quaerat quam aperiam quibusdam, officiis esse officia nisi repudiandae, ullam adipisci dolor ad?</p>
                     </div>
-                    <a class="btn" href="#">HIRE ME</a>
-                    <a class="btn" href="#">SEE MY RESUME</a>
+                    <a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
+                    <a class="btn" href="#" data-modal="#modal_resume">SEE MY RESUME</a>
                 </div>
             </div>
         </div>
@@ -305,7 +305,7 @@
                     <a href="#" class="footer__nav-link">About Me</a>
                     <a href="#" class="footer__nav-link">Blog</a>
                     <a href="#" class="footer__nav-link">Contact</a>
-                    <a href="#" class="footer__nav-link--btn">Hire Me</a>
+                    <a href="#" class="footer__nav-link--btn" data-modal="#modal_hire_me">Hire Me</a>
                 </nav>
             </div>
         </div>
@@ -314,9 +314,9 @@
 <!--MODALS-->
 <!--WORK-->
 
-    <div class="modal" style="display: none;">
+    <div class="modal" id="modal_project_1">
         <div class="modal__dialog">
-            <button class="modal__close">
+            <button class="modal__close" type="button" data-close>
                 <i class="fas fa-times-circle"></i>
             </button>
             <div class="modal-work">
@@ -354,9 +354,9 @@
 
 <!--RESUME-->
 
-    <div class="modal" style="display: none;">
+    <div class="modal" id="modal_resume">
         <div class="modal__dialog">
-            <button class="modal__close">
+            <button class="modal__close" type="button" data-close>
                 <i class="fas fa-times-circle"></i>
             </button>
             <div class="modal__content">
@@ -514,7 +514,7 @@
                     </div>
                 </div>
                 <div class="text-center">
-                    <a class="btn" href="#">Hire Me</a>
+                    <a class="btn" href="#" data-modal="#modal_hire_me">Hire Me</a>
                 </div>
             </div>
         </div>
@@ -522,9 +522,9 @@
 
 <!--CONTACT-->
 
-    <div class="modal" style="display: none;">
+    <div class="modal" id="modal_hire_me">
         <div class="modal__dialog modal__dialog--sm">
-            <button class="modal__close">
+            <button class="modal__close" type="button" data-close>
                 <i class="fas fa-times-circle"></i>
             </button>
             <div class="contact">
