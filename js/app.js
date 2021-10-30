@@ -1,5 +1,7 @@
 $(function() {
 
+    const worksSlider = $('[data-slider="slick"]');
+
     /*FILTER*/
     let filter = $("[data-filter]");
     filter.on("click", function(event) {
@@ -48,6 +50,8 @@ $(function() {
 
         }, 200);
 
+        worksSlider.slick('setPosition');
+
     });
 
     modalClose.on("click", function(event) {
@@ -86,6 +90,33 @@ $(function() {
 
     $(".modal__dialog").on("click", function(event) {
         event.stopPropagation();
+    });
+
+    /*SLIDER*/
+
+    worksSlider.slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        arrows: false,
+        dots: true
+    });
+
+    $(".slickPrev").on("click", function(event) {
+        event.preventDefault();
+
+        let currentSlider = $(this).parents('.modal').find('[data-slider="slick"]');
+
+        currentSlider.slick("slickPrev");
+    });
+
+    $(".slickNext").on("click", function(event) {
+        event.preventDefault();
+
+        let currentSlider = $(this).parents('.modal').find('[data-slider="slick"]');
+
+        currentSlider.slick("slickNext");
     });
 
 });
