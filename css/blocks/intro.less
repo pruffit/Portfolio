@@ -17,6 +17,10 @@
 
 .intro__content{
     width: 50%;
+
+    @media @mobile-sm {
+        width: 100%;
+    }
 }
 
 .intro__suptitle{
@@ -54,5 +58,9 @@
 
     @media @tablet {
         width: 350px;
+    }
+
+    @media @mobile-sm {
+        display: none;
     }
 }
