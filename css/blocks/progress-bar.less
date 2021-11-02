@@ -6,6 +6,7 @@
 
 .progress-bar__item{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: .3rem;
 }
@@ -14,11 +15,13 @@
     font-size: .94rem;
     font-weight: 300;
     width: 100px;
-
 }
 
 .progress-bar__right{
     padding-left: 1.2rem;
+    @media @tablet {
+        padding-left: 0;
+    }
 }
 
 .progress-bar__bar{

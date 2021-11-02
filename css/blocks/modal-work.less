@@ -8,12 +8,18 @@
     width: 65%;
     position: relative;
     overflow: hidden;
+    @media @tablet {
+        display: none;
+    }
 }
 
 .modal-work__content{
     width: 35%;
     padding: 3.4rem 6.6rem 1rem 1.7rem;
     position: relative;
+    @media @tablet {
+        width: 100%;
+    }
 }
 
 .modal-work__photo{
@@ -94,6 +100,9 @@
     font-size: 0.94rem;
     color: @black;
     text-transform: uppercase;
+    @media @tablet {
+        display: none;
+    }
 }
 
 .prev{
