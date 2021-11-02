@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d19e848ad9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Works</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+<!--HEADER-->
+
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="user">
+                <div class="user__avatar">
+                    <img src="images/portfolio/avatar.jpg" alt="">
+                </div>
+                <div class="user__content">
+                    <div class="user__name">
+                        Danil<br>Kotlaev
+                    </div>
+                    <div class="user__prof">
+                        FRONT-END DEVELOPER
+                    </div>
+                </div>
+            </div>
+            <nav class="nav" id="nav">
+                <a class="nav__link" href="#" data-scroll="#work">work</a>
+                <a class="nav__link" href="#" data-scroll="#about">about me</a>
+                <!--<a class="nav__link" href="#">blog</a>
+                <a class="nav__link" href="#">contact</a>-->
+                <a class="nav__link nav__link--btn" href="#" data-modal="#modal_hire_me">hire me</a>
+            </nav>
+
+            <button class="burger" type="button" id="navToggle">
+                <i class="fas fa-bars burger__icon"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!--INTRO-->
+
+<section class="intro">
+    <div class="container">
+        <div class="intro__inner">
+            <div class="intro__content">
+                <h2 class="intro__suptitle">Hello i'm</h2>
+                <h1 class="intro__title">Danil Kotlaev</h1>
+                <h3 class="intro__subtitle">FRONT-END DEVELOPER</h3>
+                <div class="social">
+                    <!--VK-->
+                    <a href="https://vk.com/piss2013" class="social__link" target="_blank"><i class="fab fa-vk" style="color: #0077ff"></i></a>
+                    <!--FACEBOOK
+                    <a href="#" class="social__link" target="_blank"><i class="fab fa-facebook-square" style="color: #1877f2"></i></a>-->
+                    <!--TWITTER
+                    <a href="#" class="social__link" target="_blank"><i class="fab fa-twitter" style="color: #1da1f2"></i></a>-->
+                    <!--INSTAGRAM-->
+                    <a href="https://www.instagram.com/pruffit/" class="social__link" target="_blank"><i class="fab fa-instagram" style="color: #912cb3"></i></a>
+                    <!--YOUTUBE
+                    <a href="#" class="social__link" target="_blank"><i class="fab fa-youtube" style="color: #ff0000"></i></a>-->
+                    <!--TELEGRAM-->
+                    <a href="https://t.me/userpruffit" class="social__link" target="_blank"><i class="fab fa-telegram" style="color: #2fa0d1"></i></a>
+                </div>
+                <a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
+                <a class="btn" href="#" data-modal="#modal_resume">SEE MY RESUME</a>
+            </div>
+            <img class="intro__photo" src="images/intro/photo.png" alt="">
+        </div>
+    </div>
+</section>
+
+<!--WORKS-->
+
+<div class="works" id="work">
+    <div class="container">
+        <div class="works__nav">
+            <a href="#" class="works__nav-link" data-filter="all">All</a>
+            <a href="#" class="works__nav-link" data-filter="app">App</a>
+            <a href="#" class="works__nav-link" data-filter="website">Websites</a>
+            <a href="#" class="works__nav-link" data-filter="study_project">Study Project</a>
+        </div>
+        <div class="portfolio">
+            <div class="portfolio__col" data-cat="study_project">
+                <div class="portfolio__item" data-modal="#modal_project_1">
+                    <iframe src="https://pruffit.github.io/mogo" width="370px" height="300px" frameborder="0"></iframe>
+                    <div class="portfolio__item-content">
+                        <div class="portfolio__item-cat">
+                            Study Project
+                        </div>
+                        <div class="portfolio__item-title">
+                            MoGo
+                            <time class="portfolio__item-date" datetime="2021-10-24 15:48">
+                                2021
+                            </time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--
+            <div class="portfolio__col" data-cat="interaction">
+                <div class="portfolio__item">
+                    <img class="portfolio__item-image" src="https://placehold.it/740x600/333" alt="">
+                    <div class="portfolio__item-content">
+                        <div class="portfolio__item-cat">
+                            Interaction
+                        </div>
+                        <div class="portfolio__item-title">
+                            Project title
+                            <time class="portfolio__item-date" datetime="2021-11-22 19:00">
+                                2021
+                            </time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio__col" data-cat="app">
+                <div class="portfolio__item">
+                    <img class="portfolio__item-image" src="https://placehold.it/740x600/333" alt="">
+                    <div class="portfolio__item-content">
+                        <div class="portfolio__item-cat">
+                            App
+                        </div>
+                        <div class="portfolio__item-title">
+                            Project title
+                            <time class="portfolio__item-date" datetime="2021-11-22 19:00">
+                                2021
+                            </time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+-->
+        </div>
+        <div class="text-center">
+            <a class="btn btn--sm" href="index.html">BACK</a>
+        </div>
+    </div>
+</div>
+
+<!--FOOTER-->
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__credits">
+                <div class="footer__copyright">
+                    &copy; 2018 UI43 - Free Templates
+                </div>
+                <div class="footer__social">
+                    <!--VK-->
+                    <a class="footer__social-link footer__social-link-V" href="https://vk.com/piss2013" target="_blank"><i class="fab fa-vk"></i></a>
+                    <!--FACEBOOK
+                    <a class="footer__social-link footer__social-link-F" href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>-->
+                    <!--TWITTER
+                    <a class="footer__social-link footer__social-link-TW" href="#" target="_blank"><i class="fab fa-twitter"></i></a>-->
+                    <!--INSTAGRAM-->
+                    <a class="footer__social-link footer__social-link-I" href="https://www.instagram.com/pruffit/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <!--YOUTUBE
+                    <a class="footer__social-link footer__social-link-Y" href="#" target="_blank"><i class="fab fa-youtube"></i></a>-->
+                    <!--TELEGRAM-->
+                    <a class="footer__social-link footer__social-link-TL" href="https://t.me/userpruffit" target="_blank"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+            <nav class="footer__nav">
+                <a href="#" class="footer__nav-link" data-scroll="#work">Work</a>
+                <a href="#" class="footer__nav-link" data-scroll="#about">About Me</a>
+                <!--<a href="#" class="footer__nav-link">Blog</a>
+                <a href="#" class="footer__nav-link">Contact</a>-->
+                <a href="#" class="footer__nav-link--btn" data-modal="#modal_hire_me">Hire Me</a>
+            </nav>
+        </div>
+    </div>
+</footer>
+
+<!--JS-->
+
+<script src="js/slick.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
