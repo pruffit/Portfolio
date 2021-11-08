@@ -88,7 +88,7 @@
             </div>
             <div class="portfolio">
                 <div class="portfolio__col" data-cat="study_project">
-                    <div class="portfolio__item" data-modal="#modal_project_1">
+                    <div class="portfolio__item" data-modal="#mogo">
                         <iframe src="https://pruffit.github.io/mogo" width="370px" height="300px" frameborder="0"></iframe>
                         <div class="portfolio__item-content">
                             <div class="portfolio__item-cat">
@@ -96,6 +96,22 @@
                             </div>
                             <div class="portfolio__item-title">
                                 MoGo
+                                <time class="portfolio__item-date" datetime="2021-10-24 15:48">
+                                    2021
+                                </time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col" data-cat="study_project">
+                    <div class="portfolio__item" data-modal="#ActiveBox">
+                        <iframe src="https://pruffit.github.io/ActiveBox/" width="370px" height="300px" frameborder="0"></iframe>
+                        <div class="portfolio__item-content">
+                            <div class="portfolio__item-cat">
+                                Study Project
+                            </div>
+                            <div class="portfolio__item-title">
+                                ActiveBox
                                 <time class="portfolio__item-date" datetime="2021-10-24 15:48">
                                     2021
                                 </time>
@@ -321,7 +337,7 @@
 <!--WORK-->
 <!--MOGO-->
 
-    <div class="modal" id="modal_project_1">
+    <div class="modal" id="#mogo">
         <div class="modal__dialog">
             <button class="modal__close" type="button" data-close>
                 <i class="fas fa-times-circle"></i>
@@ -361,6 +377,48 @@
             </div>
         </div>
     </div>
+
+<!--ActiveBox-->
+<div class="modal" id="#ActiveBox">
+    <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+            <i class="fas fa-times-circle"></i>
+        </button>
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <iframe src="https://pruffit.github.io/ActiveBox/" width="800px" height="800px" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">
+                        ActiveBox
+                    </h3>
+                    <div class="modal-work__info">
+                        Study Project<span class="divider">|</span>2021
+                    </div>
+                </div>
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title"></div>
+                    <div class="modal-work__client-company"></div>
+                </div>
+                <div class="modal-work__text">
+                    <p>
+                        It's just study website. You can follow the link and see it in all its glory. All work on the website was completed on November 8, 2021.
+                        <a href="https://pruffit.github.io/ActiveBox/">https://pruffit.github.io/ActiveBox/</a>
+                    </p>
+                </div>
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn slickPrev" type="button"><i class="prev fas fa-chevron-left"></i>Previous</button>
+                    <button class="modal-work__btn slickNext" type="button">Next<i class="next fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!--RESUME-->
 
